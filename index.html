@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" class="h-full min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter lg:absolute lg:left-0 lg:top-0">
+    <div
+      class="mx-4 mt-6 flex h-auto max-h-full flex-col lg:mx-[165px] lg:mb-0 lg:mt-[90px] lg:min-h-full"
+    >
+      <div
+        class="mb-8 flex flex-row items-center justify-between transition-all duration-300"
+      >
+        <img src="../assets/images/logo.svg" alt="logo" class="h-8 lg:h-10" />
+        <div
+          class="flex flex-row items-center gap-[32px] text-[18px] text-dark-grayish-blue"
+          id="dropdownButton"
+        >
+          <img
+            src="../assets/images/icon-menu.svg"
+            alt="menu"
+            class="cursor-pointer lg:hidden"
+            onclick="toggleDropdown()"
+          />
+          <a
+            href=""
+            class="hidden transition-all duration-300 hover:text-soft-orange lg:inline"
+            >Home</a
+          ><a
+            href=""
+            class="hidden transition-all duration-300 hover:text-soft-orange lg:inline"
+            >New</a
+          ><a
+            href=""
+            class="hidden transition-all duration-300 hover:text-soft-orange lg:inline"
+            >Popular</a
+          ><a
+            href=""
+            class="hidden transition-all duration-300 hover:text-soft-orange lg:inline"
+            >Trending</a
+          ><a
+            href=""
+            class="hidden transition-all duration-300 hover:text-soft-orange lg:inline"
+            >Categories</a
+          >
+          <div
+            class="shadow-3xl fixed right-0 top-0 flex hidden h-screen w-[256px] flex-col items-start bg-white p-[25px] text-2xl transition-all duration-300"
+            id="dropdown"
+          >
+            <div
+              class="mb-[80px] flex w-full flex-row items-center justify-end"
+            >
+              <img
+                src="../assets/images/icon-menu-close.svg"
+                alt="close-menu"
+                class="cursor-pointer"
+                onclick="toggleDropdown()"
+              />
+            </div>
+            <a
+              href=""
+              class="mb-[24px] transition-all duration-300 hover:text-soft-orange"
+              >Home</a
+            ><a
+              href=""
+              class="mb-[24px] transition-all duration-300 hover:text-soft-orange"
+              >New</a
+            ><a
+              href=""
+              class="mb-[24px] transition-all duration-300 hover:text-soft-orange"
+              >Popular</a
+            ><a
+              href=""
+              class="mb-[24px] transition-all duration-300 hover:text-soft-orange"
+              >Trending</a
+            ><a
+              href=""
+              class="transition-all duration-300 hover:text-soft-orange"
+              >Categories</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid-flow-row-dense grid-cols-3 grid-rows-3 gap-x-[30px] transition-all duration-300 lg:mt-[18px] lg:grid"
+      >
+        <article
+          class="col-span-2 row-span-2 flex-col gap-x-[30px] gap-y-[35px] transition-all duration-300 lg:flex"
+        >
+          <img
+            src="../assets/images/image-web-3-mobile.jpg"
+            alt="web-3"
+            class="ml-auto mr-auto h-auto max-w-full lg:hidden"
+          />
+          <img
+            src="../assets/images/image-web-3-desktop.jpg"
+            alt="web-3"
+            class="hidden h-[300px] w-[730px] lg:block"
+          />
+          <div class="w-full flex-row justify-between lg:flex">
+            <div class="lg:w-1/2">
+              <h1
+                class="mt-6 text-[2.425rem] font-extrabold leading-[2.5rem] text-black lg:mt-0 lg:text-[3.55rem] lg:leading-[3.55rem]"
+              >
+                The Bright <br class="md:hidden" />Future of Web
+                <br class="md:hidden" />3.0 ?
+              </h1>
+            </div>
+            <div class="lg:w-1/2">
+              <p
+                class="mt-[1.135rem] text-[15px] font-normal leading-[1.61rem] text-dark-grayish-blue lg:ml-[50px] lg:mt-0"
+              >
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise ?
+              </p>
+              <button
+                class="mt-5 flex flex-row items-center justify-center self-start bg-soft-red px-8 py-[14px] text-sm font-bold uppercase tracking-[0.3em] text-white transition-all duration-300 hover:bg-very-dark-blue lg:ml-[50px] lg:mt-7"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </article>
+        <div
+          class="col-span-1 row-span-2 mb-[30px] mt-[3.75rem] flex flex-col bg-very-dark-blue p-5 transition-all duration-300 lg:m-0"
+        >
+          <h2 class="mt-[0.385rem] text-3xl font-bold text-soft-orange">New</h2>
+          <a class="mb-[1.85rem] mt-[1.4rem]" href="">
+            <h3
+              class="text-xl font-bold text-off-white transition-all duration-300 hover:text-soft-orange"
+            >
+              Hydrogen VS Electric Cars
+            </h3>
+            <p
+              class="w-[95%] self-start pt-2 text-[14.5px] leading-6 text-grayish-blue"
+            >
+              Will hydrogen-fueled cars ever catch up to Evs?
+            </p>
+          </a>
+          <a
+            class="relative my-8 before:absolute before:-top-[26px] before:block before:h-[1px] before:w-full before:bg-dark-grayish-blue before:content-[''] after:absolute after:-bottom-[26px] after:block after:h-[1px] after:w-full after:bg-dark-grayish-blue after:content-['']"
+            href=""
+          >
+            <h3
+              class="text-xl font-bold text-off-white transition-all duration-300 hover:text-soft-orange"
+            >
+              The Downsides of AI Artistry
+            </h3>
+            <p
+              class="mt-2 self-start text-[14.5px] leading-[1.65rem] text-grayish-blue"
+            >
+              What are the most possible adverse effects of on demand AI image
+              generation?
+            </p>
+          </a>
+          <a class="mb-2 mt-[1.8rem]" href="">
+            <h3
+              class="text-xl font-bold text-off-white transition-all duration-300 hover:text-soft-orange"
+            >
+              Is VC Funding Drying Up?
+            </h3>
+            <p
+              class="mt-2 self-start text-[14.5px] leading-[1.65rem] text-grayish-blue"
+            >
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </a>
+        </div>
+        <a
+          href=""
+          class="col-span-1 row-span-1 mt-[29px] flex flex-row items-center transition-all duration-300 lg:m-0"
+        >
+          <img
+            src="../assets/images/image-retro-pcs.jpg"
+            alt="retro-pcs"
+            class="w-[100px]"
+          />
+          <div class="ml-[22px] flex flex-col justify-center font-bold">
+            <h3 class="text-[2rem] text-grayish-blue">01</h3>
+            <h3
+              class="text-lg font-extrabold text-very-dark-blue transition-all duration-300 hover:text-soft-red lg:font-extrabold"
+            >
+              Reviving Retro PCs
+            </h3>
+            <p
+              class="mt-1 text-[15px] font-normal leading-[1.65rem] text-dark-grayish-blue"
+            >
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </a>
+        <a
+          href=""
+          class="col-span-1 row-span-1 mt-[29px] flex flex-row items-center transition-all duration-300 lg:m-0"
+        >
+          <img
+            src="../assets/images/image-top-laptops.jpg"
+            alt="top-laptops"
+            class="w-[100px]"
+          />
+          <div class="ml-[22px] flex flex-col justify-center font-bold">
+            <h3 class="text-[2rem] text-grayish-blue">02</h3>
+            <h3 class="text-lg font-extrabold text-very-dark-blue">
+              Top 10 Laptops of 2022
+            </h3>
+            <p
+              class="mt-1 text-[15px] font-normal leading-[1.65rem] text-dark-grayish-blue"
+            >
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </a>
+        <a
+          href=""
+          class="col-span-1 row-span-1 mb-[80px] mt-[29px] flex flex-row items-center transition-all duration-300 lg:m-0"
+        >
+          <img
+            src="../assets/images/image-gaming-growth.jpg"
+            alt="gaming-growth"
+            class="w-[100px]"
+          />
+          <div class="ml-[22px] flex flex-col justify-center font-bold">
+            <h3 class="text-[2rem] text-grayish-blue">03</h3>
+            <h3
+              class="text-lg font-extrabold text-very-dark-blue transition-all duration-300 hover:text-soft-red"
+            >
+              The Growth of Gaming
+            </h3>
+            <p
+              class="mt-1 text-[15px] font-normal leading-[1.65rem] text-dark-grayish-blue"
+            >
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <script>
+      function toggleDropdown() {
+        let dropdown = document.querySelector("#dropdownButton #dropdown");
+        dropdown.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
